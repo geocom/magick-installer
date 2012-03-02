@@ -2,6 +2,7 @@
 set -e
 
 use_sudo=${1:-1} # call this script with 0 to not use sudo
+prefix="${2:-/usr/local}" # pass argument 2 of this script to change the installation prefix
 
 password_on_sudo="`openssl rand -base64 96`"
 password_salt_on_sudo="`openssl rand -hex 32'`"
@@ -83,14 +84,14 @@ download ftp://ftp.sunet.se/pub/multimedia/graphics/ImageMagick/ImageMagick-6.6.
 tar xzvf libiconv-1.13.1.tar.gz
 cd libiconv-1.13.1
 cd libcharset
-./configure --prefix=/usr/local
+./configure --prefix="$prefix"
 make
 _sudo make install
 cd ../..
 
 tar xzvf freetype-2.4.3.tar.gz
 cd freetype-2.4.3
-./configure --prefix=/usr/local
+./configure --prefix="$prefix"
 make clean
 make
 _sudo make install
@@ -98,7 +99,7 @@ cd ..
 
 tar xzvf libpng-1.5.5.tar.gz
 cd libpng-1.5.5
-./configure --prefix=/usr/local
+./configure --prefix="$prefix"
 make clean
 make
 _sudo make install
@@ -109,7 +110,7 @@ tar xzvf jpegsrc.v8b.tar.gz
 cd jpeg-8b
 ln -s -f `which glibtool` ./libtool
 export MACOSX_DEPLOYMENT_TARGET=10.7
-./configure --enable-shared --prefix=/usr/local
+./configure --enable-shared --prefix="$prefix"
 make clean
 make
 _sudo make install
@@ -118,7 +119,7 @@ cd ..
 
 tar xzvf tiff-3.9.4.tar.gz
 cd tiff-3.9.4
-./configure --prefix=/usr/local
+./configure --prefix="$prefix"
 make clean
 make
 _sudo make install
@@ -127,7 +128,7 @@ cd ..
 
 tar xzvf libwmf-0.2.8.4.tar.gz
 cd libwmf-0.2.8.4
-./configure
+./configure --prefix="$prefix"
 make clean
 make
 _sudo make install
@@ -136,7 +137,7 @@ cd ..
 
 tar xzvf lcms-1.19.tar.gz
 cd lcms-1.19
-./configure
+./configure --prefix="$prefix"
 make clean
 make
 _sudo make install
@@ -145,7 +146,7 @@ cd ..
 
 tar zxvf ghostscript-9.04.tar.gz
 cd ghostscript-9.04
-./configure  --prefix=/usr/local
+./configure  --prefix="$prefix"
 make clean
 make
 _sudo make install
@@ -159,9 +160,17 @@ _sudo mv -f fonts/* /usr/local/share/ghostscript/fonts
 
 tar xzvf ImageMagick-6.6.7-0.tar.gz
 cd ImageMagick-6.6.7-0
-export CPPFLAGS=-I/usr/local/include
-export LDFLAGS=-L/usr/local/lib
-./configure --prefix=/usr/local --disable-static --without-fontconfig --with-modules --without-perl --without-magick-plus-plus --with-quantum-depth=8 --with-gs-font-dir=/usr/local/share/ghostscript/fonts --disable-openmp
+export CPPFLAGS=-I"$prefix/include"
+export LDFLAGS=-L"$prefix/lib"
+./configure --prefix="$prefix" \
+            --disable-static \
+            --without-fontconfig \
+            --with-modules \
+            --without-perl \
+            --without-magick-plus-plus \
+            --with-quantum-depth=8 \
+            --with-gs-font-dir="$prefix/share/ghostscript/fonts" \
+            --disable-openmp
 make clean
 make
 _sudo make install
