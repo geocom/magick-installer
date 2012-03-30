@@ -7,7 +7,7 @@ Magick Installer exists for two reasons:
 
 ## How?
 
-    curl https://raw.github.com/maddox/magick-installer/master/magick-installer.sh | sh
+    curl https://raw.github.com/steakknife/magick-installer/master/magick-installer.sh | sh
 
 or
 
