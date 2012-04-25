@@ -11,6 +11,11 @@ Magick Installer exists for two reasons:
 
 or
 
+Barry Allard added
+
+##### Uninstaller `curl https://raw.github.com/gist/2492297/uninstall-imagemagick.sh | sh`
+
+
 Download and run this simple script and watch your ImageMagick support go from 0 to 1 without MacPorts.
 
 ## Verified Platforms
