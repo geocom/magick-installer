@@ -189,6 +189,7 @@ export LDFLAGS=-L"$prefix/lib"
 extract_build ImageMagick-${imagemagick_version}.tar.gz                \
                                                                        \
                 --disable-static                                       \
+                --disable-opencl                                       \
                 --without-fontconfig                                   \
                 --with-modules                                         \
                 --without-perl                                         \
