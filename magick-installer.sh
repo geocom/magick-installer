@@ -20,7 +20,7 @@
           libtiff_version=4.0.1
            libwmf_version=0.2.8.4
              lcms_version=1.19
-      ghostscript_version=9.04
+      ghostscript_version=9.05
 ghostscript_fonts_version=8.11
       imagemagick_version=6.6.7-0
 
