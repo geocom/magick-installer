@@ -13,7 +13,7 @@
 # ---- versions
 
          libiconv_version=1.13.1
-         freetype_version=2.4.3
+         freetype_version=2.4.9
      libpng_major_version=15
            libpng_version=1.5.10
              jpeg_version=8d
