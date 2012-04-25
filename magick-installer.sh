@@ -15,7 +15,7 @@
          libiconv_version=1.13.1
          freetype_version=2.4.3
      libpng_major_version=15
-           libpng_version=1.5.5
+           libpng_version=1.5.10
              jpeg_version=8b
           libtiff_version=3.9.4
            libwmf_version=0.2.8.4
