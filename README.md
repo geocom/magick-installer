@@ -7,7 +7,7 @@ Magick Installer exists for two reasons:
 
 ## How?
 
-### curl https://raw.github.com/steakknife/magick-installer/master/magick-installer.sh | sh
+### Effortless install `curl https://raw.github.com/steakknife/magick-installer/master/magick-installer.sh | sh`
 
 or download and run this simple script and watch your ImageMagick support go from 0 to 1 without MacPorts.
 
