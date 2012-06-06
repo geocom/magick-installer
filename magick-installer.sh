@@ -12,17 +12,17 @@
 
 # ---- versions
 
-         libiconv_version=1.13.1
+         libiconv_version=1.14
          freetype_version=2.4.9
      libpng_major_version=15
            libpng_version=1.5.10
-             jpeg_version=8d
+             jpeg_version=8b
           libtiff_version=4.0.1
            libwmf_version=0.2.8.4
-             lcms_version=1.19
+             lcms_version=2-2.3
       ghostscript_version=9.05
 ghostscript_fonts_version=8.11
-      imagemagick_version=6.7.6-7
+      imagemagick_version=6.7.7-6
 
 
 
