@@ -22,7 +22,7 @@
              lcms_version=2-2.3
       ghostscript_version=9.05
 ghostscript_fonts_version=8.11
-      imagemagick_version=6.7.7-6
+      imagemagick_version=6.7.7-5
 
 
 
