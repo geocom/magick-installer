@@ -145,13 +145,13 @@ pushd "${build_root}" >/dev/null
 
 _download http://ftp.gnu.org/pub/gnu/libiconv/libiconv-${libiconv_version}.tar.gz
 _download http://nongnu.askapache.com/freetype/freetype-${freetype_version}.tar.gz
-_download http://sourceforge.net/projects/libpng/files/libpng${libpng_major_version}/older-releases/${libpng_version}/libpng-${libpng_version}.tar.gz
+_download http://downloads.sourceforge.net/project/libpng/libpng${libpng_major_version}/${libpng_version}/libpng-${libpng_version}.tar.gz
 _download http://www.imagemagick.org/download/delegates/jpegsrc.v${jpeg_version}.tar.gz
 _download http://download.osgeo.org/libtiff/tiff-${libtiff_version}.tar.gz
-_download http://voxel.dl.sourceforge.net/project/wvware/libwmf/${libwmf_version}/libwmf-${libwmf_version}.tar.gz
+_download http://downloads.sourceforge.net/project/wvware/libwmf/${libwmf_version}/libwmf-${libwmf_version}.tar.gz
 _download http://downloads.sourceforge.net/project/lcms/lcms/${lcms_version}/lcms-${lcms_version}.tar.gz
-_download http://sourceforge.net/projects/ghostscript/files/GPL%20Ghostscript/${ghostscript_version}/ghostscript-${ghostscript_version}.tar.gz
-_download http://voxel.dl.sourceforge.net/project/gs-fonts/gs-fonts/${ghostscript_fonts_version}%20%28base%2035%2C%20GPL%29/ghostscript-fonts-std-${ghostscript_fonts_version}.tar.gz
+_download http://downloads.sourceforge.net/project/ghostscript/files/GPL%20Ghostscript/${ghostscript_version}/ghostscript-${ghostscript_version}.tar.gz
+_download http://downloads.sourceforge.net/project/gs-fonts/gs-fonts/${ghostscript_fonts_version}%20%28base%2035%2C%20GPL%29/ghostscript-fonts-std-${ghostscript_fonts_version}.tar.gz
 _download ftp://ftp.sunet.se/pub/multimedia/graphics/ImageMagick/ImageMagick-${imagemagick_version}.tar.gz
 
 
