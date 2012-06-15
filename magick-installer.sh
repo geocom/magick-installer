@@ -175,7 +175,7 @@ extract_build tiff-${libtiff_version}.tar.gz
 
 extract_build libwmf-${libwmf_version}.tar.gz 
 
-extract_build lcms-${lcms_version}.tar.gz
+extract_build lcms2-${lcms_version}.tar.gz
 
 extract_build ghostscript-${ghostscript_version}.tar.gz 
 
