@@ -19,7 +19,7 @@
              jpeg_version=8b
           libtiff_version=3.9.6
            libwmf_version=0.2.8.4
-             lcms_version=2-2.3
+             lcms_version=2.3
       ghostscript_version=9.05
 ghostscript_fonts_version=8.11
       imagemagick_version=6.7.7-5
@@ -149,7 +149,7 @@ _download http://downloads.sourceforge.net/project/libpng/libpng${libpng_major_v
 _download http://www.imagemagick.org/download/delegates/jpegsrc.v${jpeg_version}.tar.gz
 _download http://download.osgeo.org/libtiff/tiff-${libtiff_version}.tar.gz
 _download http://downloads.sourceforge.net/project/wvware/libwmf/${libwmf_version}/libwmf-${libwmf_version}.tar.gz
-_download http://downloads.sourceforge.net/project/lcms/lcms/${lcms_version}/lcms-${lcms_version}.tar.gz
+_download http://downloads.sourceforge.net/project/lcms/lcms/${lcms_version}/lcms2-${lcms_version}.tar.gz
 _download http://downloads.sourceforge.net/project/ghostscript/files/GPL%20Ghostscript/${ghostscript_version}/ghostscript-${ghostscript_version}.tar.gz
 _download http://downloads.sourceforge.net/project/gs-fonts/gs-fonts/${ghostscript_fonts_version}%20%28base%2035%2C%20GPL%29/ghostscript-fonts-std-${ghostscript_fonts_version}.tar.gz
 _download ftp://ftp.sunet.se/pub/multimedia/graphics/ImageMagick/ImageMagick-${imagemagick_version}.tar.gz
