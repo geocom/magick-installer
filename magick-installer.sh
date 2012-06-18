@@ -177,7 +177,7 @@ extract_build libwmf-${libwmf_version}.tar.gz
 
 extract_build lcms2-${lcms_version}.tar.gz
 
-extract_build ghostscript-${ghostscript_version}.tar.gz 
+extract_build ghostscript-${ghostscript_version}.tgz
 
 extract ghostscript-fonts-std-${ghostscript_fonts_version}.tar.gz fonts
 _sudo mkdir -p "${prefix}/share/ghostscript/fonts"
