@@ -119,7 +119,19 @@ function extract() {
   test -d "${cd_dir}" || tar ${tar_opts}xf "${tarball}" 
   pushd "${cd_dir}" >/dev/null
 }
+function extractgs() {
+  tarball="${1}" 
+  default_cd_dir="`echo ${tarball} | sed 's/\.tgz\..*$//'`"
+  cd_dir="${2:-${default_cd_dir}}" 
 
+  header "${default_cd_dir}"
+  test -d "${cd_dir}" || tar ${tar_opts}xf "${tarball}" 
+  pushd "${cd_dir}" >/dev/null
+}
+function extract_buildgs() {
+  extractgs "${1}" ; shift
+  build "${@}"
+}
 function build() {
   ./configure --prefix="${prefix}" ${config_opts} ${@}
   make clean
@@ -177,7 +189,7 @@ extract_build libwmf-${libwmf_version}.tar.gz
 
 extract_build lcms2-${lcms_version}.tar.gz
 
-extract_build ghostscript-${ghostscript_version}.tgz
+extract_buildgs ghostscript-${ghostscript_version}.tgz
 
 extract ghostscript-fonts-std-${ghostscript_fonts_version}.tar.gz fonts
 _sudo mkdir -p "${prefix}/share/ghostscript/fonts"
