@@ -150,7 +150,7 @@ _download http://www.imagemagick.org/download/delegates/jpegsrc.v${jpeg_version}
 _download http://download.osgeo.org/libtiff/tiff-${libtiff_version}.tar.gz
 _download http://downloads.sourceforge.net/project/wvware/libwmf/${libwmf_version}/libwmf-${libwmf_version}.tar.gz
 _download http://downloads.sourceforge.net/project/lcms/lcms/${lcms_version}/lcms2-${lcms_version}.tar.gz
-_download http://downloads.sourceforge.net/project/ghostscript/GPL%20Ghostscript/${ghostscript_version}/ghostscript-${ghostscript_version}.tar.gz
+_download http://downloads.sourceforge.net/project/ghostscript/GPL%20Ghostscript/${ghostscript_version}/ghostscript-${ghostscript_version}.tgz
 _download http://downloads.sourceforge.net/project/gs-fonts/gs-fonts/${ghostscript_fonts_version}%20%28base%2035%2C%20GPL%29/ghostscript-fonts-std-${ghostscript_fonts_version}.tar.gz
 _download ftp://ftp.sunet.se/pub/multimedia/graphics/ImageMagick/ImageMagick-${imagemagick_version}.tar.gz
 
