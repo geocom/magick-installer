@@ -121,7 +121,7 @@ function extract() {
 }
 function extractgs() {
   tarball="${1}" 
-  default_cd_dir="`echo ghostscript-${ghostscript_version}.tgz`"
+  default_cd_dir="`echo ghostscript-${ghostscript_version}`"
   cd_dir="${2:-${default_cd_dir}}" 
 
   header "${default_cd_dir}"
