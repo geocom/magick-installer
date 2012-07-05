@@ -198,7 +198,7 @@ popd >/dev/null
 
 export CPPFLAGS=-I"$prefix/include"
 export LDFLAGS=-L"$prefix/lib"
-extract_build ImageMagick.tar.gz                                       \
+extract_build ImageMagick-${imagemagick_version}.tar.gz                \
                                                                        \
                 --disable-static                                       \
                 --disable-opencl                                       \
