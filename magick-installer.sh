@@ -136,7 +136,7 @@ function build() {
   ./configure --prefix="${prefix}" ${config_opts} ${@}
   make clean
   make
-  _sudo make install
+  sudo make install
   popd >/dev/null
 }
 
@@ -192,8 +192,9 @@ extract_build lcms2-${lcms_version}.tar.gz
 extract_buildgs ghostscript-${ghostscript_version}.tgz
 
 extract ghostscript-fonts-std-${ghostscript_fonts_version}.tar.gz fonts
-_sudo mkdir -p "${prefix}/share/ghostscript/fonts"
-_sudo mv -f * "${prefix}/share/ghostscript/fonts"
+sudo mkdir -p "${prefix}/share/ghostscript/fonts"
+sudo mv -f ${build_root}/fonts "${prefix}/share/ghostscript/"
+
 popd >/dev/null
 
 export CPPFLAGS=-I"$prefix/include"
