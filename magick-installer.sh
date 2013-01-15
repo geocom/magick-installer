@@ -22,7 +22,7 @@
              lcms_version=2.3
       ghostscript_version=9.05
 ghostscript_fonts_version=8.11
-      imagemagick_version=6.8.1-9
+      imagemagick_version=6.8.0-10
 
 
 # ---- initial code
@@ -163,7 +163,9 @@ _download http://downloads.sourceforge.net/project/wvware/libwmf/${libwmf_versio
 _download http://downloads.sourceforge.net/project/lcms/lcms/${lcms_version}/lcms2-${lcms_version}.tar.gz
 _download http://downloads.sourceforge.net/project/ghostscript/GPL%20Ghostscript/${ghostscript_version}/ghostscript-${ghostscript_version}.tgz
 _download http://downloads.sourceforge.net/project/gs-fonts/gs-fonts/${ghostscript_fonts_version}%20%28base%2035%2C%20GPL%29/ghostscript-fonts-std-${ghostscript_fonts_version}.tar.gz
-_download http://www.imagemagick.org/download/ImageMagick-${imagemagick_version}.tar.gz
+_download http://www.imagemagick.org/download/legacy/ImageMagick-${imagemagick_version}.tar.gz
+
+#_download http://www.imagemagick.org/download/ImageMagick-${imagemagick_version}.tar.gz
 
 
 # ---- build and install
